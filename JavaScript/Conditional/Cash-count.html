@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Cash counter machine</title>
+    <script>
+        "use strict";
+        main();
+        function main()
+        {
+           let amt=Number(prompt("Enter an amount:-"));
+          if(amt>=2000)
+          {
+            let count=Math.trunc(amt/2000);
+            console.log(`2000 * ${count} = ${2000*count}`);
+            amt=amt%2000;
+          }
+          if(amt>=500)
+          {
+            let count=Math.trunc(amt/500);
+            console.log(`500 * ${count} = ${500*count}`);
+            amt=amt%500;
+          }
+          if(amt>=200)
+          {
+            let count=Math.trunc(amt/200);
+            console.log(`200 * ${count} = ${200*count}`);
+            amt=amt%200;
+          }
+          if(amt>=100)
+          {
+            let count=Math.trunc(amt/100);
+            console.log(`100 * ${count} = ${100*count}`);
+            amt=amt%100;
+          }
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Cash count</h1>
+</body>
+</html>

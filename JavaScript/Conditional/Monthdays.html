@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Month days</title>
+    <script>
+        let year=Number(prompt(`Enter an year:-`));
+        let month=Number(prompt(`Enter a month Number:-`));
+        if(month>12||month<=0)
+        {
+            console.log("****Invalid input****");
+        }
+        else
+        {
+            switch(month)
+            {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                console.log("Enter month day= 31days");
+                break;
+                case 4:
+                case 6:
+                case 11:
+                console.log("Enter month day= 30days");
+                break;
+                case 2:
+                    if((year%4==0)&&(year%100!==0)||(year%400===0))
+                    {
+                        console.log("Enter month day is = 29 days");
+                    }
+                    else
+                    {
+                        console.log("Enter month days is = 28 days");
+                    }
+                    break;
+                default :
+                        console.log("Invalid input");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Month days</h1>
+</body>
+</html>

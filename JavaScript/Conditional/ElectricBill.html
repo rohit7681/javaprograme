@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Electric Bill</title>
+    <script>
+        let unit=Number(prompt(`Enter the units:-`));
+        console.log("Monthly consumed unit ="+unit);
+        if(unit>0&&unit<=200)
+        {
+            console.log("No fees");
+        }
+        if(unit>=201&&unit<=250)
+        {
+            let temp=unit-200;
+            console.log(`From 0-200 unit fees = 0 `);
+            console.log(`From 200 - ${unit} unit:-${temp} fees = ${temp*3} `);
+            console.log(`Total-fees = 0 + ${temp} * 3 = ${temp*3}`);
+        }
+        if(unit>=251&&unit<=300)
+        {
+            let temp=unit-250;
+            console.log(`From 0-200 unit fees = 0 `);
+            console.log(`From 200 - 250 unit:- 50 fees = 50*3 = 150 `);
+            console.log(`From 250 - ${unit} unit:-${temp} fees = ${temp*5}`);
+            console.log(`Total-fees = 0 + 50 * 3 + ${temp} * 5 = ${50*3+temp*5}`);
+        }
+        if(unit>300)
+        {
+            let temp=unit-300;
+            console.log(`From 0-200 unit fees = 0 `);
+            console.log(`From 200 - 250 unit:- 50 fees = 50*3 = 150 `);
+            console.log(`From 250 - 300 unit:- 50 fees = 50*5 = 250 `);
+            console.log(`From 300 - ${unit} unit:-${temp} fees = ${temp*7}`);
+            console.log(`Total-fees = 0 + 50 * 3 + 50 * 5 + ${temp} * 7 = ${50*3+50*5+temp*7}`);
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Electric Bill</h1>
+</body>
+</html>

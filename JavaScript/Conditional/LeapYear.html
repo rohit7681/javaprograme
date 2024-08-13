@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Leap Year</title>
+    <script>
+        "use strict";
+        main();
+        function main()
+        {
+            let year=Number(prompt("Enter an year to check leap year or not:-"));
+            if(((year%4==0)&&(year%100!=0))||(year%400==0))
+            {
+                console.log(`Enter year${year} is a leap year`);
+            }
+            else{
+                console.log(`Enter year${year} is not a leap year`);
+            }
+        }
+    </script>
+    <style>
+        div{
+          background-image: linear-gradient(blue,red,black,green);
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1 align="center">Leap Year</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+            console.log("Enter 5 subject mark :-");
+            let s1=Number(prompt("Enter 1st subject mark:-"));
+            console.log("Student 1st subject mark:-"+s1);
+            if(s1>100 || s1<0 )
+            {
+                console.log("Subject-1 is Invalid input");
+                //console.log("Enter the mark less than 100");
+            }
+            let s2=Number(prompt("Enter 2nd subject mark:-"));
+            console.log("Student 2nd subject mark:-"+s2);
+            if(s2>100 || s2<0 )
+            {
+                console.log("Subject-2 is Invalid input");
+                //console.log("Enter the mark less than 100");
+            }
+            let s3=Number(prompt("Enter 3rd subject mark:-"));
+            console.log("Student 3rd subject mark:-"+s3);
+            if(s3>100 || s3<0 )
+            {
+                console.log("Subject-3 is Invalid input");
+               // console.log("Enter the mark less than 100");
+            }
+            let s4=Number(prompt("Enter 4th subject mark:-"));
+            console.log("Student 4th subject mark:-"+s4);
+            if(s4>100 || s4<0 )
+            {
+                console.log("Subject-4 is Invalid input");
+                //console.log("Enter the mark less than 100");
+            }
+            let s5=Number(prompt("Enter 5th subject mark:-"));
+            console.log("Student 5th subject mark:-"+s5);
+            if(s5>100 || s5<0)
+            {
+                console.log("Subject-5 is Invalid input");
+                //console.log("Enter the mark less than 100");
+            }
+            if(s1>35 && s2>35 && s3>35 && s4>35 && s5>35)
+            {
+                console.log("Student pass");
+                let total=(s1+s2+s3+s4+s5);
+                let agg=(total/500*100);
+                console.log("Total result="+total);
+                console.log("Aggrigate percentage="+agg+"%");
+                if(agg>=90)
+                {
+                    console.log("Grade ="+"A+");
+                }
+                else if(agg>=80 && agg<90)
+                {
+                    console.log("Grade ="+"A");
+                }
+                else if(agg>=70 && agg<80)
+                {
+                    console.log("Grade ="+"B");
+                }
+                else if(agg<70)
+                {
+                    console.log("Grade ="+"C");
+                }
+            }
+            else{
+                console.log("Student fail");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">School Gradding System</h1>
+</body>
+</html>

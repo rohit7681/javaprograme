@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(lightcoral,navy,lightpink);
+            background-attachment: fixed;
+        }
+        .container{
+            display: grid;
+            height: 400px;
+            width: 600px;
+            border: 2px solid red;
+            margin: 180px auto;
+            grid-template-columns: repeat(4,auto);
+            grid-gap: 20px;
+            padding: 15px;
+        }
+        .child{
+            background-color: black;
+            color: white;
+            border: 2px double white;
+        }
+        .one{
+            grid-row: 1/3;
+            grid-column: 1/2;
+        }
+        .three{
+            grid-row: 1/3;
+            grid-column: 3/4;
+        }
+        .eight{
+            grid-row: 3/4;
+            grid-column: 2/4;
+        }
+        .ten{
+            grid-row: 4/5;
+            grid-column: 1/3;
+        }
+        .eleven{
+            grid-row: 4/5;
+            grid-column: 3/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one">ITEM-1</div>
+        <div class="child two">ITEM-2</div>
+        <div class="child three">ITEM-3</div>
+        <div class="child four">ITEM-4</div>
+        <div class="child five">ITEM-5</div>
+        <div class="child six">ITEM-6</div>
+        <div class="child seven">ITEM-7</div>
+        <div class="child eight">ITEM-8</div>
+        <div class="child nine">ITEM-9</div>
+        <div class="child ten">ITEM-10</div>
+        <div class="child eleven">ITEM-11</div>
+
+    </div>
+</body>
+</html>

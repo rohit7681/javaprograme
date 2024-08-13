@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        let d1=new Date();
+        let day=d1.getDay();
+        console.log( d1 );
+        let msg="Today is";
+        if(day == 0)
+        msg=msg+"Sunday";
+    else if(day == 1)
+        msg+= "Monday";
+    else if(day==2)
+        msg+= "Tuesday";
+     else if(day==3)
+        msg+= "Wednesday";
+     else if(day==4)
+        msg+= "Thursday";
+     else if(day==5)
+        msg+= "Friday";
+     else if(day==6)
+        msg+= "Saturday";
+        console.log(" "+msg);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
